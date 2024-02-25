@@ -1,0 +1,98 @@
+#heading{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 3em;
+}
+#dice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.dice {  
+    padding: 4px;  
+    background-color: tomato;  
+    width: 104px;  
+    height: 104px;  
+    border-radius: 10%;
+}
+.dot {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color:white;
+}
+.first-face {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.second-face{
+    display: none;
+    justify-content : space-between;
+}
+.second-face .dot:nth-of-type(2) {
+    align-self: flex-end;
+}
+.third-face{
+    display: none;
+    justify-content : space-between;
+}
+.third-face .dot:nth-of-type(2) {
+    align-self: center;
+}
+.third-face .dot:nth-of-type(3) {
+    align-self: flex-end;
+}
+.fourth-face {
+    display: none;
+    justify-content: space-between;
+}
+.fourth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fifth-face {
+    display: none;
+    justify-content: space-between;
+}
+.fifth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fifth-face .column:nth-of-type(2) {
+    justify-content: center;
+}
+.sixth-face {
+    display: none;
+    justify-content: space-between;
+}
+.sixth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#roll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    border-radius: 0.5em;
+    color: white;
+    background-color: rgb(102, 165, 186);
+    cursor: pointer;
+    transition: backgroung-color 0.10s;
+}
+#roll:hover{
+    background-color: rgb(37, 97, 117);
+}
